@@ -60,3 +60,37 @@ favMovies.splice(favMovies.indexOf('Django Unchained'),1,"Avatar")
 console.log(favMovies)
 const favMoviesSlice = favMovies.slice(4,6)
 console.log(favMoviesSlice)
+
+//Where is Waldo
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+whereIsWaldo.splice(whereIsWaldo.indexOf('Eggbert'),1,'')
+console.log(whereIsWaldo)
+whereIsWaldo.splice(whereIsWaldo.indexOf('Neff'),1,'No One')
+//need to remove Neff
+console.log(whereIsWaldo)
+
+// for (let x = 0; x < array.length; x++) {
+// 	array[i]
+// }
+//Need to get Waldo to list
+
+//Excited Kitten
+for (let i = 0; i <= 20; i++) {
+	console.log("Love me, pet me! HSSSSSS!", +i)
+	var f = i % 3 == 0, b = i % 7 == 0;	g = i % Math.random (20)
+	console.log(f ?"...human...why you taking pictures of me?..." : g ? "...the catnip made me do it..." : b ? "...why does the red dot always get away..." : i);
+}
+//Find the Median
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+nums.sort()
+const total = 0;
+for (let i = 0; i < nums.length; i++) {
+	total += nums[i];
+}
+const median = total/nums.length;
+// let lowMid = Math.floor((nums.length + 1)/2)
+// let highMid = Math.ceil((nums.length - 1)/2)
+// let median = (lowMid + highMid) / 2;
+console.log(median)
