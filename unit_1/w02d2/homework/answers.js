@@ -36,9 +36,27 @@ const ninjaTurtles = ["Donatello", "Leonardo", "Raphael","Michelangelo"]
 for (let uppercase of ninjaTurtles) {
   // uppercase = ninjaTurtles
   console.log(uppercase.toUpperCase())
+	//got stuck calling the function....
 }
 //favMovies
 const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 console.log(favMovies[8])
 console.log(favMovies.sort())
 console.log(favMovies.pop())
+favMovies.push("Guardians of the Galaxy")
+favMovies.push("Gladiator")
+console.table(favMovies)
+
+const revFavMovies = favMovies.reverse() ;
+console.table(revFavMovies)
+
+favMovies.shift();
+console.log(favMovies)
+
+favMovies.unshift("Gladiator")
+console.log(favMovies)
+
+favMovies.splice(favMovies.indexOf('Django Unchained'),1,"Avatar")
+console.log(favMovies)
+const favMoviesSlice = favMovies.slice(4,6)
+console.log(favMoviesSlice)
