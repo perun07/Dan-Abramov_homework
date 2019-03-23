@@ -65,32 +65,37 @@ console.log(favMoviesSlice)
 const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
                     ["Lucinda", "Jacc", "Neff", "Snoop"],
                     ["Petunia", ["Baked Goods", "Waldo"]]];
-whereIsWaldo.splice(whereIsWaldo.indexOf('Eggbert'),1,'')
+whereIsWaldo.splice(whereIsWaldo.indexOf('Eggbert'),1)
 console.log(whereIsWaldo)
-whereIsWaldo.splice(whereIsWaldo.indexOf('Neff'),1,'No One')
+whereIsWaldo[1].splice(whereIsWaldo[1].indexOf('Neff'),1,'No One')
 //need to remove Neff
 console.log(whereIsWaldo)
 
-// for (let x = 0; x < array.length; x++) {
-// 	array[i]
+console.log(whereIsWaldo[2][1][1])
 // }
 //Need to get Waldo to list
 
 //Excited Kitten
-for (let i = 0; i <= 20; i++) {
-	console.log("Love me, pet me! HSSSSSS!", +i)
-	var f = i % 3 == 0, b = i % 7 == 0;	g = i % Math.random (20)
-	console.log(f ?"...human...why you taking pictures of me?..." : g ? "...the catnip made me do it..." : b ? "...why does the red dot always get away..." : i);
-}
+const arr = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..." ]
+for (let i = 1; i < 21; i++) {
+ // if (i % 2 === 0)
+ 	console.log("Love me, pet me! HSSSSSS!", +i)
+	if (i % 2 === 0) {
+	const yo = arr[Math.floor(Math.random()*3)]
+	console.log(yo)
+	}
+	}
 //Find the Median
 const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
 nums.sort()
-const total = 0;
-for (let i = 0; i < nums.length; i++) {
-	total += nums[i];
-}
-const median = total/nums.length;
+// const total = 0;
+// for (let i = 0; i < nums.length; i++) {
+// 	// total += nums[i];
+// }
+const median = nums.length/2;
 // let lowMid = Math.floor((nums.length + 1)/2)
 // let highMid = Math.ceil((nums.length - 1)/2)
 // let median = (lowMid + highMid) / 2;
-console.log(median)
+console.log(nums[Math.floor(median)])
+// console.log(median)
+//realized I was looking for the average/mean and I should have been going Median
