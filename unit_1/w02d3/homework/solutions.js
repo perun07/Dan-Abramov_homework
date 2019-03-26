@@ -4,9 +4,7 @@
 // Return gives you the specified value. Console.log runs the function/item you have built.
 //checkPalindrome
 function checkPalindrome(palindrome) {
- const check = /[\W_]/g;
- //found regular expressions when looking on how to complete this. Super neat.
- palindrome = palindrome.toLowerCase().replace(check, '');
+  palindrome = palindrome.toLowerCase().replace(check, '');
  const leng = palindrome.length;
  for (let i = 0; i < leng/2; i++) {
    if (palindrome[i] !== palindrome[leng - 1 - i]) {
