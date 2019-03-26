@@ -5,7 +5,7 @@
 
 function checkPalindrome(palindrome) {
  const check = /[\W_]/g;
- //found regular expressions when looking on how to complete this. Super neat. 
+ //found regular expressions when looking on how to complete this. Super neat.
  palindrome = palindrome.toLowerCase().replace(check, '');
  const leng = palindrome.length;
  for (let i = 0; i < leng/2; i++) {
@@ -15,7 +15,17 @@ function checkPalindrome(palindrome) {
  }
  return true;
 }
-
 console.log(checkPalindrome("Radar"));
 console.log(checkPalindrome("RACECAR"));
 console.log(checkPalindrome("Borscht"));
+
+function sumArray(count) {
+  if(!Array.isArray(count)) return;
+  let total = 0;
+  for (let i=0,l=count.length; i<l; i++) {
+     total+=count[i];
+  }
+  return total;
+}
+
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
