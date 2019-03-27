@@ -29,3 +29,8 @@ if (yourAnswer === 'Arriving') {
     sayBye();
   }
 }
+
+let action = null
+while (action !== "stop"){
+  action = prompt('What do you want to do', "Your action");
+}
